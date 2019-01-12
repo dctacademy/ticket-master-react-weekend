@@ -25,6 +25,7 @@ function TicketTable(props) {
                             priority={ticket.priority} 
                             message={ticket.message} 
                             status={ticket.status}
+                            handleStatusChange={props.handleStatusChange}
                         />
                     )
                 })}

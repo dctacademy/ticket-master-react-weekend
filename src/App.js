@@ -4,6 +4,7 @@ import TicketIndex from './tickets/index'
 import TicketShow from './tickets/show'
 
 
+
 class App extends Component {
   render() {
     return (
@@ -12,7 +13,7 @@ class App extends Component {
           <div className="mt-4">
             <h2>Ticket Master</h2>
           </div>
-
+          
           <Route path='/' component={TicketIndex} exact />
           <Route path='/tickets/:code' component={TicketShow}  />
         </div>
